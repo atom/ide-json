@@ -1,0 +1,7 @@
+{
+	"fields" : [
+		{ "label" : "hello", "name" : "baz" },
+		{ "label" : "bar", "name" : "foo" },
+		{ "example" : 3 }
+	]
+}
