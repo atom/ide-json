@@ -1,0 +1,12 @@
+{
+	"$schema" : "some-schema.json",
+	"sites" : [
+		
+	],
+	"overwrites" : {
+		
+	},
+	"settings" : {
+		
+	}
+}
