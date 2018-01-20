@@ -1,53 +1,53 @@
 {
-	"name": "ide-json",
-	"main": "./lib/main",
-	"version": "0.2.0",
-	"description": "JSON language support for Atom-IDE",
-	"repository": "https://github.com/atom/ide-json",
-	"license": "MIT",
-	"engines": {
-		"atom": ">=1.21.0"
-	},
-	"keywords": [
-		"atom-ide",
-		"json",
-		"lsp",
-		"language-client"
-	],
-	"dependencies": {
-		"atom-languageclient": "0.8.1",
-		"vscode-json-languageserver-bin": "^1.0.1"
-	},
-	"enhancedScopes": [
-		"source.json"
-	],
-	"consumedServices": {
-		"linter-indie": {
-			"versions": {
-				"2.0.0": "consumeLinterV2"
-			}
-		},
-		"atom-ide-busy-signal": {
+  "name": "ide-json",
+  "main": "./lib/main",
+  "version": "0.3.0",
+  "description": "JSON language support for Atom-IDE",
+  "repository": "https://github.com/atom/ide-json",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.21.0"
+  },
+  "keywords": [
+    "atom-ide",
+    "json",
+    "lsp",
+    "language-client"
+  ],
+  "dependencies": {
+    "atom-languageclient": "0.8.1",
+    "vscode-json-languageserver-bin": "^1.0.1"
+  },
+  "enhancedScopes": [
+    "source.json"
+  ],
+  "consumedServices": {
+    "linter-indie": {
+      "versions": {
+        "2.0.0": "consumeLinterV2"
+      }
+    },
+    "atom-ide-busy-signal": {
       "versions": {
         "0.1.0": "consumeBusySignal"
       }
     }
-	},
-	"providedServices": {
-		"autocomplete.provider": {
-			"versions": {
-				"2.0.0": "provideAutocomplete"
-			}
-		},
-		"definitions": {
-			"versions": {
-				"0.1.0": "provideDefinitions"
-			}
-		},
-		"outline-view": {
-			"versions": {
-				"0.1.0": "provideOutlines"
-			}
-		}
-	}
+  },
+  "providedServices": {
+    "autocomplete.provider": {
+      "versions": {
+        "2.0.0": "provideAutocomplete"
+      }
+    },
+    "definitions": {
+      "versions": {
+        "0.1.0": "provideDefinitions"
+      }
+    },
+    "outline-view": {
+      "versions": {
+        "0.1.0": "provideOutlines"
+      }
+    }
+  }
 }
