@@ -1,29 +1,22 @@
 {
-	"name": "atom-ide-json",
-	"main": "./src/main",
-	"version": "0.1.0",
-	"description": "JSON language support for Atom-IDE.",
-	"repository": "rwatts3/atom-ide-json",
+	"name": "ide-json",
+	"main": "./lib/main",
+	"version": "0.2.0",
+	"description": "JSON language support for Atom-IDE",
+	"repository": "https://github.com/atom/ide-json",
 	"license": "MIT",
 	"engines": {
-		"atom": ">=1.19.0"
+		"atom": ">=1.21.0"
 	},
 	"keywords": [
 		"atom-ide",
 		"json",
-		"community",
 		"lsp",
 		"language-client"
 	],
-	"author": {
-		"name": "Ryan Watts",
-		"url": "https://github.com/rwatts3",
-		"email": "ryandwatts@gmail.com"
-	},
 	"dependencies": {
-		"atom-languageclient": "^0.6.4",
-		"fuzzaldrin-plus": "^0.5.0",
-		"vscode-json-languageserver-bin": "^1.0.0"
+		"atom-languageclient": "0.8.1",
+		"vscode-json-languageserver-bin": "^1.0.1"
 	},
 	"enhancedScopes": [
 		"source.json"
@@ -34,11 +27,11 @@
 				"2.0.0": "consumeLinterV2"
 			}
 		},
-		"datatip": {
-			"versions": {
-				"0.1.0": "consumeDatatip"
-			}
-		}
+		"atom-ide-busy-signal": {
+      "versions": {
+        "0.1.0": "consumeBusySignal"
+      }
+    },
 	},
 	"providedServices": {
 		"autocomplete.provider": {
@@ -49,11 +42,6 @@
 		"definitions": {
 			"versions": {
 				"0.1.0": "provideDefinitions"
-			}
-		},
-		"find-references": {
-			"versions": {
-				"0.1.0": "provideFindReferences"
 			}
 		},
 		"outline-view": {
