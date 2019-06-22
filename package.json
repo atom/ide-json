@@ -16,7 +16,7 @@
   ],
   "dependencies": {
     "atom-languageclient": "0.8.3",
-    "vscode-json-languageserver-bin": "^1.0.1"
+    "vscode-json-languageserver": "^1.0.1"
   },
   "enhancedScopes": [
     "source.json"
