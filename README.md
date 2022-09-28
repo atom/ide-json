@@ -1,4 +1,5 @@
-# IDE-JSON package
+##### Atom and all repositories under Atom will be archived on December 15, 2022. Learn more in our [official announcement](https://github.blog/2022-06-08-sunsetting-atom/)
+ # IDE-JSON package
 
 JSON language support for Atom-IDE, powered by [VSCode JSON Language Server](https://github.com/vscode-langservers/vscode-json-languageserver-bin).
 
